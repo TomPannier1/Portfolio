@@ -19,7 +19,7 @@ body {
 header {
     position: fixed;
     width: 100%;    
-    background: #FDF7D3;
+    background: rgba(253, 247, 211, 0.5); /* #FDF7D3 en rgba avec 50% de transparence */
     max-height: 100px;
     border-bottom: 1px solid #000;
     
