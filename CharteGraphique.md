@@ -1,32 +1,49 @@
-# 🎨 Charte Graphique - Portfolio d'un Développeur Web
+# **Charte Graphique - Portfolio de Tom Pannier**
 
-## 1. Palette de Couleurs
-Une palette moderne et professionnelle pour assurer une identité visuelle cohérente :
+## **1. Identité Visuelle**
 
-- **Couleur principale :** Bleu foncé (#0A192F) → Confiance, professionnalisme  
-- **Couleur secondaire :** Bleu clair (#64FFDA) → Innovation, technologie  
-- **Couleur d'accent :** Gris foncé (#1F2937) → Élégance, lisibilité  
-- **Couleur de fond :** Blanc cassé (#F8F9FA) → Simplicité, confort visuel  
-- **Couleur des textes :** Gris clair (#E5E7EB) pour les titres et Gris moyen (#9CA3AF) pour le texte  
+### **Palette de Couleurs**
+Les couleurs utilisées assurent une harmonie visuelle tout en garantissant une bonne lisibilité.
 
-L’ensemble offre un contraste équilibré pour une lecture agréable et une apparence moderne.
+- **Couleur principale (fond du site) :** `#FDF7D3` (Beige clair)
+- **Couleur secondaire (boutons, bordures, détails) :** `#69644E` (Brun foncé)
+- **Couleur d’accentuation (liens et effets interactifs) :** `#007ced` (Bleu vif)
+- **Texte principal :** `#000000` (Noir)
+- **Fond du header (avec transparence) :** `rgba(253, 247, 211, 0.5)` (Beige clair, 50% de transparence)
 
-## 2. Typographies
-L’identité visuelle repose sur une typographie élégante et lisible :
+### **Typographie**
+La police utilisée est **Poppins**, une police sans-serif moderne et élégante, assurant une lecture fluide et un design épuré.
 
-- **Titres et sous-titres :** *Poppins* (sans-serif) → Moderne et structuré  
-- **Texte courant :** *Inter* (sans-serif) → Lisibilité optimale  
-- **Code ou éléments techniques :** *Fira Code* (monospace) → Adapté aux projets techniques  
+- **Police principale :** `Poppins, sans-serif`
 
-## 3. Iconographie et Visuels
-- Utilisation d’icônes minimalistes (Material Icons, FontAwesome).  
-- Illustrations épurées en SVG pour optimiser le temps de chargement.  
-- Images en format WebP pour un bon équilibre entre qualité et performance.  
+## **2. Disposition et Design**
 
-## 4. Style UI/UX
-- Design épuré avec espaces bien définis pour une navigation fluide.  
-- Boutons et liens avec effet de survol subtil (légère élévation, changement de couleur).  
-- Ombres douces et coins légèrement arrondis pour une touche moderne.  
-- Animations légères en CSS/JS pour dynamiser l’expérience utilisateur sans alourdir le site.  
+### **Header (En-tête du site)**
+- Fixé en haut de l’écran (`position: fixed;`)
+- Fond semi-transparent pour s’intégrer au design global (`background: rgba(253, 247, 211, 0.5);`)
+- Contient un logo à gauche et un menu de navigation à droite
+- Séparé du reste du contenu par une fine ligne noire en bas
 
-Cette charte garantit une cohérence visuelle et une expérience utilisateur agréable tout en mettant en valeur le contenu du portfolio.
+### **Navigation**
+- Alignement horizontal des liens
+- Effet de soulignement au survol (`hover::after`)
+- Espacement entre les éléments pour assurer une bonne lisibilité
+
+### **Boutons & Interactions**
+- Boutons arrondis avec effet d’ombre portée
+- Changement de couleur au survol (`border-color: #007ced;`)
+- Bouton "Download CV" déclenche automatiquement le téléchargement du fichier
+
+### **Section Principale (Hero Section)**
+- **Image de profil ronde** avec bordure (`border: 15px solid #69644E;`)
+- **Texte centré** et espacé pour une bonne lecture
+- **Boutons bien visibles** pour encourager l’action (téléchargement du CV, contact)
+
+### **Footer (Pied de page)**
+- Texte centré
+- Couleur sobre et discrète pour ne pas surcharger visuellement
+
+## **3. Expérience Utilisateur (UX) & Accessibilité**
+- **Tous les liens externes s’ouvrent dans une nouvelle fenêtre** (`target="_blank"` pour éviter de quitter le site)
+- **Navigation fluide et intuitive**
+- **Police lisible avec un bon contraste**, assurant une accessibilité optimale
