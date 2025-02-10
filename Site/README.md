@@ -17,8 +17,7 @@ Bienvenue sur mon portfolio ! Ce site a été conçu pour présenter mes compét
 ## Photo
 
 - **Photo de profil :**
-    - Actuellement, la photo de profil affichée sur le site est une image "fun" de **Sylvain Durif**, car je n'ai pas encore de bonne photo à utiliser. Cependant, je prévois d'ajouter une photo plus sérieuse dans quelques jours.
-    - Pour obtenir un résultat plus sérieux, une autre photo de moi est déjà disponible sous le nom de **"main_photo2"**. Il vous suffit de modifier la ligne de code correspondante dans le fichier HTML pour l'afficher à la place de l'image actuelle.
+    - Actuellement, la photo de profil affichée sur le site est une image datant de deux ans, car je n'ai pas encore de bonne photo à utiliser. Cependant, je prévois d'ajouter une photo plus récente dans quelques jours.
 
 ## Technologies utilisées
 
