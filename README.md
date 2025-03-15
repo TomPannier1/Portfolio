@@ -23,4 +23,4 @@ Bienvenue sur mon portfolio ! Ce site a été conçu pour présenter mes compét
 
 ## À propos
 
-Ce site a été créé pour mettre en avant mes projets et mes compétences en cybersécurité et développement web.
+Ce site a été créé pour mettre en avant mes projets et mes compétences.
