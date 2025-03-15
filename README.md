@@ -1,57 +1,31 @@
-# 📌 Portfolio - Développeur Web
+# Portfolio de Tom Pannier
 
-## 📖 Contexte
+Bienvenue sur mon portfolio ! Ce site a été conçu pour présenter mes compétences, mon parcours et mes projets. Ci-dessous, vous trouverez des informations sur le fonctionnement du site.
 
-Dans un secteur du développement web hautement concurrentiel, il est essentiel pour un développeur de disposer d'un portfolio en ligne. Ce projet vise à créer un site web personnel permettant de présenter mes compétences, réalisations et expériences afin d'attirer des opportunités professionnelles.
+## Fonctionnalités principales
 
-## 🎯 Objectifs
+- **Navigation :** 
+    - Le site dispose d'un menu de navigation en haut de la page qui vous permet de naviguer entre différentes sections : "Home", "Portfolio", "Resume", "Contact".
+    - Chaque lien externe (comme ceux qui renvoient vers mes réseaux sociaux) s'ouvrira dans une **nouvelle fenêtre** pour ne pas quitter le site.
 
-- Offrir une vitrine professionnelle et moderne.
-- Mettre en avant mes compétences techniques et les projets réalisés.
-- Faciliter la prise de contact avec des recruteurs ou des clients potentiels.
-- Assurer une expérience utilisateur fluide et agréable.
+- **Bouton "Download CV" :** 
+    - Ce bouton permet de télécharger mon CV au format PDF. Il suffit de cliquer dessus pour démarrer le téléchargement.
 
-## 🎯 Public Cible
+- **Page "Contact" :**
+    - La page "Contact" vous permet de découvrir comment me contacter. Vous y trouverez mes informations de contact et un formulaire de contact si vous souhaitez échanger avec moi.
 
-- **Recruteurs** à la recherche de développeurs qualifiés.
-- **Petites entreprises et startups** cherchant un freelance ou un employé.
-- **Autres développeurs** souhaitant échanger ou collaborer.
+## Photo
 
-## 🚀 Fonctionnalités principales
+- **Photo de profil :**
+    - Actuellement, la photo de profil affichée sur le site est une image datant de deux ans, car je n'ai pas encore de bonne photo à utiliser. Cependant, je prévois d'ajouter une photo plus récente dans quelques jours.
 
-- **Page d'accueil** : Présentation rapide, mise en avant des compétences principales.
-- **Page "À propos"** : Biographie et parcours professionnel.
-- **Portfolio** : Liste des projets avec descriptions, images, technologies utilisées et liens.
-- **Blog (optionnel)** : Partage d'expériences, conseils techniques.
-- **Page Contact** : Formulaire de contact, liens vers LinkedIn, GitHub, email.
-- **Version multilingue (optionnel)** : Français / Anglais.
+## Technologies utilisées
 
-## 💻 Technologies utilisées
+- **HTML**
+- **CSS**
+- **JavaScript** (pour les interactions)
+- **Google Fonts** pour la police **Poppins**
 
-- **HTML5** - Structure du site.
-- **CSS3** - Mise en forme et responsive design.
-- **JavaScript** - Interactivité et dynamique du site.
+## À propos
 
-## 📂 Contraintes
-
-### Mentions Légales et Conformité au RGPD
-
-- Affichage des mentions légales (nom, contact, hébergeur).
-- Formulaire de contact conforme au RGPD (consentement explicite, mention de l'utilisation des données, possibilité de suppression des données).
-- Utilisation de cookies limitée et affichage d'un bandeau de consentement si nécessaire.
-- Protection des données personnelles (stockage sécurisé, accès limité aux informations).
-
-### Responsive Design
-
-- Le site doit être entièrement responsive et s'adapter à tous types d'écrans (mobiles, tablettes, desktops).
-- Les éléments d'interface doivent rester accessibles et lisibles quel que soit l'appareil utilisé.
-- Tester l'affichage sur différentes tailles d'écran pour assurer une expérience utilisateur optimale.
-
-### SEO (Search Engine Optimization)
-
-- Optimisation des balises HTML (title, meta description, heading tags).
-- Utilisation de mots-clés pertinents pour améliorer le référencement naturel.
-- Chargement rapide des pages pour un meilleur positionnement dans les moteurs de recherche.
-- Mise en place d'un sitemap XML et d'un fichier robots.txt pour faciliter l'indexation.
-- Optimisation des images et utilisation d’attributs alt pour améliorer l'accessibilité et le SEO.
-
+Ce site a été créé pour mettre en avant mes projets et mes compétences en cybersécurité et développement web.
