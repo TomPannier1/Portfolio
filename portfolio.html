@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tom Pannier</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="assets/img/logo.png" alt="Logo">
+            </div>            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Résumé</a></li>                
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="portfolio-section">
+            <div class="portfolio-header">
+                <h2>Mes Projets</h2>
+                <p>Découvrez une sélection de mes projets dans le domaine de la cybersécurité et du développement web.</p>
+            </div>
+            
+            <div class="project-list">
+
+                <!-- Projet 1 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/projet4.jpg" alt="CTF Cybersécurité">
+                    </div>
+                    <div class="project-content">
+                        <h3>Réseau Social "Twist"</h3>
+                        <p>Création d'un réseau social sur lequel il est possible de se connecter avec Google. Il est également possible de suivre des personnes, publier des posts contenant des images, etc...</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Prisma</span>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/TomPannier1/Twist" target="_blank">
+                                <span class="project-btn" data-github="#"><i class="fa-brands fa-github"></i> Git du projet</span>
+                            </a>
+                            <a href="https://twist-silk.vercel.app/" target="_blank">
+                                <span class="project-btn" data-github="#"><i class="fa-solid fa-up-right-from-square"></i> Voir le projet</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/portfolio.PNG" alt="Système de détection d'intrusion">
+                    </div>
+                    <div class="project-content">
+                        <h3>Ce Portfolio</h3>
+                        <p>Portfolio sur lequel vous naviguez actuellement. Celui-ci regroupe mon CV, un résumé personnel, une fiche de contact et une liste de quelques projets techniques que j'ai pu réaliser.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">Javascript</span>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/TomPannier1/Portfolio/tree/Website" target="_blank">
+                                <span class="project-btn" data-github="#"><i class="fa-brands fa-github"></i> Git du projet</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/reservation.PNG" alt="Application Web Sécurisée">
+                    </div>
+                    <div class="project-content">
+                        <h3>RéservationPro</h3>
+                        <p>Développement d'une page web avec un système de réservation. Création de compte, implémentation de l'authentification multifacteur, protection contre les injections SQL/XSS.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/TomPannier1/ReservationPro" target="_blank">
+                                <span class="project-btn" data-github="#"><i class="fa-brands fa-github"></i> Git du projet</span>
+                            </a>
+                            <a href="https://github.com/TomPannier1/ReservationPro" target="_blank">
+                                <span class="project-btn" data-github="#"><i class="fa-solid fa-up-right-from-square"></i> Voir le projet</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/spw.png" alt="Analyse de vulnérabilités">
+                    </div>
+                    <div class="project-content">
+                        <h3>Super Potoo World</h3>
+                        <p>Création d'un jeu vidéo de plateforme, dans le style de Mario Bros. La réalisation de ce jeu a été un premier pas dans la gestion de différentes problématiques, comme la gestion de la physique, la gestion de déplacement, etc...</p>
+                        <div class="project-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Visual Studio Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tom Pannier. Tous droits réservés.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gestion du menu hamburger
+            const nav = document.querySelector('nav');
+            const hamburger = document.createElement('div');
+            hamburger.className = 'hamburger';
+            hamburger.innerHTML = '<span></span><span></span><span></span>';
+            nav.appendChild(hamburger);
+            
+            const menu = document.querySelector('nav ul');
+
+            hamburger.addEventListener('click', function() {
+                menu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+
+            document.querySelectorAll('nav ul li a').forEach(link => {
+                link.addEventListener('click', function() {
+                    menu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!menu.contains(event.target) && !hamburger.contains(event.target) && menu.classList.contains('active')) {
+                    menu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>
