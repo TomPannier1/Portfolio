@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Tom Pannier</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Résumé - Tom Pannier | Mon Parcours</title>
+    <meta name="description" content="Découvrez le parcours de Tom Pannier, étudiant en cybersécurité et développement informatique">
     <link rel="icon" type="image/png" href="assets/img/favicon.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <div id="logo">
-                <img src="assets/img/logo.png" alt="Logo">
+            <div class="nav-brand">
+                <h1>Tom Pannier</h1>
             </div>            
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,23 +24,25 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="hero-section">
             <article class="resume-text">
-                <h1 class="resume-text">Je m’appelle Tom et je suis passionné de musique, de lecture et de jeux vidéos, mais de plus globalement du monde informatique et numérique.</h1>
-                <p>En effet, j’en suis passionné depuis maintenant de nombreuses années. Au fil des années et de mon parcours scolaire, je me suis petit à petit orienté dans une voie axée très informatique.</p>
-                <p>Tout d’abord, après le collège, je me suis orienté dans un lycée général, où j’ai pu, en seconde, choisir une option “SNAPI” (ou encore “Sciences du Numérique appliquées à la Programmation Informatique). Cette option m’a donc servi à comprendre la logique informatique et à apprendre les bases du Java. Cette option m’a également servi à amortir l’une des trois spécialités choisies en première : Mathématiques, Physique-Chimie et NSI (ou Numérique et sciences informatiques). C’est donc en première que j’ai appris à utiliser le Python. Les spécialités mathématique et NSI m’ont beaucoup servi dans mon cursus à l’ESIEA. Ces spécialités sont d’ailleurs celles que j’ai décidé de garder en terminale.</p>
-                <p>À l’ESIEA, j’ai eu la chance de suivre des cours de programmation en C, et je suis aujourd’hui des cours de programmation en web et en java.</p>
-                <p>Au total j’ai donc appris à utiliser plus ou moins quatre différents langages informatiques, ce qui est, selon moi, une force supplémentaire pour un possible futur métier.</p>
+                <h2>Mon Parcours</h2>
+                <p>Je m'appelle Tom, étudiant en 4ᵉ année à l'ESIEA et passionné par la cybersécurité, la programmation et tout ce qui touche au numérique.</p>
+                <p>Mon parcours s'est naturellement orienté vers l'informatique au fil des projets que j'ai pu réaliser, aussi bien en développement qu'en sécurité. Aujourd'hui, je maîtrise plusieurs langages comme le C, le Python, le Java ou encore des technologies web modernes.</p>
+                <p>En parallèle de mes études, j'ai consolidé mon expérience grâce à mes trois années de travail saisonnier à MCB Industrie, ce qui m'a permis de développer rigueur, autonomie et sens des responsabilités.</p>
+                <p>Actuellement, je me spécialise en cybersécurité et je cherche un stage afin de mettre en pratique mes compétences dans un environnement professionnel, tout en continuant à progresser dans ce domaine exigeant et passionnant.</p>
             </article>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Tom Pannier. Tous droits réservés.</p>
     </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Ajouter le bouton hamburger au DOM
             const nav = document.querySelector('nav');
             const hamburger = document.createElement('div');
             hamburger.className = 'hamburger';
@@ -48,13 +51,11 @@
             
             const menu = document.querySelector('nav ul');
             
-            // Toggle du menu lorsqu'on clique sur le hamburger
             hamburger.addEventListener('click', function() {
                 menu.classList.toggle('active');
                 hamburger.classList.toggle('active');
             });
             
-            // Fermer le menu quand on clique sur un lien
             document.querySelectorAll('nav ul li a').forEach(link => {
                 link.addEventListener('click', function() {
                     menu.classList.remove('active');
@@ -62,7 +63,6 @@
                 });
             });
             
-            // Fermer le menu quand on clique en dehors
             document.addEventListener('click', function(event) {
                 if (!menu.contains(event.target) && !hamburger.contains(event.target) && menu.classList.contains('active')) {
                     menu.classList.remove('active');

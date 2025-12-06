@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Tom Pannier</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contact - Tom Pannier | Cybersécurité</title>
+    <meta name="description" content="Contactez Tom Pannier, étudiant en cybersécurité à l'ESIEA">
     <link rel="icon" type="image/png" href="assets/img/favicon.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <div id="logo">
-                <img src="assets/img/logo.png" alt="Logo">
+            <div class="nav-brand">
+                <h1>Tom Pannier</h1>
             </div>            
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,10 +26,22 @@
     </header>
     <main>
         <section class="hero-section">
-            <article class="resume-text">
-                <p><i class="fa-brands fa-linkedin"></i> Visitez mon Linkedin en cliquant <a class="souligner" href="https://www.linkedin.com/in/tom-pannier-267948253/" target="_blank">ici</a> !</p>
-                <p><i class="fa-solid fa-envelope"></i> Mon mail : pannier.tom@laposte.net</p>
-                <p><i class="fa-solid fa-phone"></i> Mon numéro : 06-21-13-66-65</p>
+            <article class="contact-text">
+                <h2>Contactez-moi</h2>
+                <div class="contact-info">
+                    <p class="contact-item">
+                        <i class="fa-brands fa-linkedin"></i> 
+                        Visitez mon LinkedIn en cliquant<a class="souligner" href="https://www.linkedin.com/in/tom-pannier-267948253/" target="_blank">ici</a> !
+                    </p>
+                    <p class="contact-item">
+                        <i class="fa-solid fa-envelope"></i> 
+                        <a href="mailto:pannier.tom@laposte.net">pannier.tom@laposte.net</a>
+                    </p>
+                    <p class="contact-item">
+                        <i class="fa-solid fa-phone"></i> 
+                        <a href="tel:+33621136665">06-21-13-66-65</a>
+                    </p>
+                </div>
             </article>
         </section>
     </main>
@@ -37,7 +50,6 @@
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Ajouter le bouton hamburger au DOM
             const nav = document.querySelector('nav');
             const hamburger = document.createElement('div');
             hamburger.className = 'hamburger';
@@ -46,13 +58,11 @@
             
             const menu = document.querySelector('nav ul');
             
-            // Toggle du menu lorsqu'on clique sur le hamburger
             hamburger.addEventListener('click', function() {
                 menu.classList.toggle('active');
                 hamburger.classList.toggle('active');
             });
             
-            // Fermer le menu quand on clique sur un lien
             document.querySelectorAll('nav ul li a').forEach(link => {
                 link.addEventListener('click', function() {
                     menu.classList.remove('active');
@@ -60,7 +70,6 @@
                 });
             });
             
-            // Fermer le menu quand on clique en dehors
             document.addEventListener('click', function(event) {
                 if (!menu.contains(event.target) && !hamburger.contains(event.target) && menu.classList.contains('active')) {
                     menu.classList.remove('active');
